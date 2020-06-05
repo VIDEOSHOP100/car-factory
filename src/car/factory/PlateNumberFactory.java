@@ -14,7 +14,7 @@ public class PlateNumberFactory {
             String liscense = (int)(Math.random()*2)+1 == 1 ? createAutoCarLiscense() : createVehicleLiscense();
 
             int count = 0;
-            while(strIntMap.containsKey(liscense)==true&&count==0) {
+            while(strIntMap.containsKey(liscense)==true && count==0) {
                 String[] res = liscense.split("-");
                 liscense = res[1] + "-" + res[0];
                 count++;
